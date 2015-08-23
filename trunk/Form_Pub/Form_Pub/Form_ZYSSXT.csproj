@@ -1,0 +1,730 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98EF67A4-0A40-4CD6-BA6B-22E2D920B443}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Form_Pub</RootNamespace>
+    <AssemblyName>住院手术系统</AssemblyName>
+    <ApplicationIcon>四叶草.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\基于检验所的检验系统\基于检验所的检验系统--定稿程序\基于检验所的检验系统\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.ExcelLite, Version=23.1.5000.1000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BeforeProjects\学校教材订购系统_管理员系统\学校教材订购系统_管理员系统\bin\Debug\GemBox.ExcelLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice_DBButton, Version=1.0.4483.26707, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ice_DBButton\Ice_DBButton\bin\Debug\Ice_DBButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice_Excel, Version=1.0.4483.26842, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ice_Excel\Ice_Excel\bin\Debug\Ice_Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BeforeProjects\学校教材订购系统_管理员系统\学校教材订购系统_管理员系统\bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BeforeProjects\学校教材订购系统_管理员系统\学校教材订购系统_管理员系统\bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BeforeProjects\学校教材订购系统_管理员系统\学校教材订购系统_管理员系统\bin\Debug\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\窗体美化\51CTO下载-51CTO下载-60种C#窗体皮肤ssk文件付使用方法\skinEngineDemo\skinEngineDemo\bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VerticalLine, Version=1.0.4470.24941, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VerticalLine\VerticalLine\bin\Debug\VerticalLine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_主窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_主窗体.Designer.cs">
+      <DependentUpon>Frm_主窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_关于.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_关于.Designer.cs">
+      <DependentUpon>Frm_关于.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_修改机构.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_修改机构.Designer.cs">
+      <DependentUpon>Frm_修改机构.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_医嘱模板.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_医嘱模板.Designer.cs">
+      <DependentUpon>Frm_医嘱模板.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术例数统计＿按医生.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术例数统计＿按医生.Designer.cs">
+      <DependentUpon>Frm_手术例数统计＿按医生.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术例数统计＿按科室.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术例数统计＿按科室.Designer.cs">
+      <DependentUpon>Frm_手术例数统计＿按科室.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术单查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术单查询.Designer.cs">
+      <DependentUpon>Frm_手术单查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术工作量统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术工作量统计.Designer.cs">
+      <DependentUpon>Frm_手术工作量统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术排班.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术排班.Designer.cs">
+      <DependentUpon>Frm_手术排班.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术明细费用查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术明细费用查询.Designer.cs">
+      <DependentUpon>Frm_手术明细费用查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术申请.Designer.cs">
+      <DependentUpon>Frm_手术申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术费用及人次统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术费用及人次统计.Designer.cs">
+      <DependentUpon>Frm_手术费用及人次统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术费用统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术费用统计.Designer.cs">
+      <DependentUpon>Frm_手术费用统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_手术项目费用及人次统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_手术项目费用及人次统计.Designer.cs">
+      <DependentUpon>Frm_手术项目费用及人次统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_护士排班.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_护士排班.Designer.cs">
+      <DependentUpon>Frm_护士排班.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_护士排班表查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_护士排班表查询.Designer.cs">
+      <DependentUpon>Frm_护士排班表查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_报告编辑.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_报告编辑.Designer.cs">
+      <DependentUpon>Frm_报告编辑.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_材料补录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_材料补录.Designer.cs">
+      <DependentUpon>Frm_材料补录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_汇总领药.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_汇总领药.Designer.cs">
+      <DependentUpon>Frm_汇总领药.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_汇总领药查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_汇总领药查询.Designer.cs">
+      <DependentUpon>Frm_汇总领药查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_申请单作废.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_申请单作废.Designer.cs">
+      <DependentUpon>Frm_申请单作废.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_病人手术费用查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_病人手术费用查询.Designer.cs">
+      <DependentUpon>Frm_病人手术费用查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_系统帮助.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_系统帮助.Designer.cs">
+      <DependentUpon>Frm_系统帮助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_药品申请.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_药品申请.Designer.cs">
+      <DependentUpon>Frm_药品申请.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_费用冲减.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_费用冲减.Designer.cs">
+      <DependentUpon>Frm_费用冲减.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_费用补录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_费用补录.Designer.cs">
+      <DependentUpon>Frm_费用补录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_锁定用户.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_锁定用户.Designer.cs">
+      <DependentUpon>Frm_锁定用户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_pub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_pub.Designer.cs">
+      <DependentUpon>Frm_pub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Pub2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Pub2.Designer.cs">
+      <DependentUpon>Frm_Pub2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_系统通知.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_系统通知.Designer.cs">
+      <DependentUpon>Frm_系统通知.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_系统参数.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_系统参数.Designer.cs">
+      <DependentUpon>Frm_系统参数.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_字典维护.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_字典维护.Designer.cs">
+      <DependentUpon>Frm_字典维护.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_问题反馈.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_问题反馈.Designer.cs">
+      <DependentUpon>Frm_问题反馈.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gv_Data.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_关于.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_关于.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_修改机构.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_修改机构.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_锁定用户.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_锁定用户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_pub.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_pub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_修改密码.resx">
+      <DependentUpon>Frm_修改密码.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pub_Data.cs" />
+    <Compile Include="Frm_修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_修改密码.Designer.cs">
+      <DependentUpon>Frm_修改密码.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\四叶草.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\药箱.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\医用镊子.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\医用纱布.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\针剂.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注射液.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注射支架.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单支架.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\钳子.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书写板.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\双支架.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\听诊器2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\听诊器.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\西药.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\血袋.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\血压器.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\药品.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\血袋输液.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\病历.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\救护车.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\体温单.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\听诊器1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\血袋2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\验血.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\药箱1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\医生.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\医院大楼.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注射.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\大草原.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海洋之鱼.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\科技世界.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蓝色畅想.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蓝色渐变.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蓝色经典.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\莲花似水.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绿色骰子.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绿色希望.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绿叶.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天空.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delicious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flickr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\announcement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technorati.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\家园边框.bmp" />
+    <None Include="Resources\淡雅边框.jpg" />
+    <None Include="Resources\竹叶边框.jpg" />
+    <None Include="Resources\绿色希望_住院手术系统.jpg" />
+    <EmbeddedResource Include="Frm_主窗体.resx">
+      <DependentUpon>Frm_主窗体.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Pub2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Pub2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_医嘱模板.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_医嘱模板.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_字典维护.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_字典维护.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术例数统计＿按医生.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术例数统计＿按医生.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术例数统计＿按科室.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术例数统计＿按科室.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术单查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术单查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术工作量统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术工作量统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术排班.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术排班.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术明细费用查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术明细费用查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术申请.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术申请.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术费用及人次统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术费用及人次统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术费用统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术费用统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_手术项目费用及人次统计.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_手术项目费用及人次统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_护士排班.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_护士排班.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_护士排班表查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_护士排班表查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_报告编辑.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_报告编辑.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_材料补录.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_材料补录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_汇总领药.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_汇总领药.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_汇总领药查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_汇总领药查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_申请单作废.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_申请单作废.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_病人手术费用查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_病人手术费用查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_系统帮助.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_系统帮助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_系统通知.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_系统通知.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_系统参数.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_系统参数.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_药品申请.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_药品申请.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_费用冲减.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_费用冲减.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_费用补录.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_费用补录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_问题反馈.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_问题反馈.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="四叶草.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
